@@ -1,3 +1,4 @@
+import OrderSummary from "./OrderSummary"
 
 const CartModal = ({products, isOpen, onClose}) => {
   return (
@@ -45,7 +46,12 @@ const CartModal = ({products, isOpen, onClose}) => {
                     }
                 </div>
 
-
+                    {/* calculation */}
+                {
+                    products.length > 0 && (
+                        <OrderSummary />
+                    )
+                }
             </div>
 
         </div>

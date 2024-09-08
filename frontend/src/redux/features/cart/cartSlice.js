@@ -32,11 +32,11 @@ const cartSlice = createSlice({
 // utilities functions
 export const setSelectedItems = (state) => state.products.reduce((total, product) => {
     return Number(total + product.quantity)
-})
+}, 0)
 
 export const setTotalPrice = (state) => state.products.reduce((total, product) => {
     return Number(total + product.quantity * product.price)
-})
+}, 0)
 
 export const setTax = (state) => setTotalPrice(state) * state.taxRate;
 
