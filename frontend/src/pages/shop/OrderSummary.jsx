@@ -10,7 +10,6 @@ const OrderSummary = () => {
   const handleClearCart = () => {
     dispatch(clearCart());
   };
-
   return (
     <div className="bg-primary-light mt-5 rounded text-base">
       <div className="px-6 py-4 space-y-5">
