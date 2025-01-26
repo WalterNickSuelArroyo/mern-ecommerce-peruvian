@@ -15,4 +15,4 @@ const generateToken = async (userId) => {
     }
 }
 
-module.exports = generateToken;
+module.exports = generateToken; 
